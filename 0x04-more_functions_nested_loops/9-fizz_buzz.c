@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - print 1 to 100 and fizzbuzz
+ * main - print 1 to 100 and fizzbuss
  *
  * Return: 0
  */
@@ -31,5 +31,5 @@ int main(void)
 	printf("Buzz");
 	printf("\n");
 
-		return (0);
+	return (0);
 }
