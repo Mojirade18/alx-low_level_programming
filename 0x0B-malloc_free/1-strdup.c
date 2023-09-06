@@ -4,25 +4,27 @@
 
 /**
  * _strdup - copies string to newly allocated space in memory
- * @str: string to copy to new memory
- * Return: pointer to new memory
+ * @str: char
+ * Return: 0
  */
 char *_strdup(char *str);
 {
-	int i;
-	char *copy;
-	int count = 0;
+	int i, r = 0;
+	char *aaa;
 
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
-		count++;
-	copy = malloc(sizeof(char) * count + 1);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
 
-	if (copy == NULL)
+
+	aaa = malloc(sizeof(char) * (i + 1));
+
+	if (aaa == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
-		copy[i] = str[i];
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
 
-	return (copy);
+	return (aaa);
 }
