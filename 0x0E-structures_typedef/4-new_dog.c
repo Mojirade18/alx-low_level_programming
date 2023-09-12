@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "dog.h"
 #include<stdlib.h>
-#ifndef DOG_H
 
 /**
  * _strlen - finds the length of a string
