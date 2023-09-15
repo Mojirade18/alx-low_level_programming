@@ -10,12 +10,10 @@
 void print_all(const char * const format, ...)
 {
 	int i, check_stat;
-
 	char *str;
 	va_list spc;
 
 	va_start(spc, format);
-
 	i = 0;
 	while (format != NULL && format[i] != '\0')
 	{
@@ -38,6 +36,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				check_stat = 0;
 				break;
 			default:
 				check_stat = 1;
