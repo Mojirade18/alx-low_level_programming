@@ -1,9 +1,13 @@
-global  main
-	extern  printf
+global main
+extern printf
+
+section .data
+    format db 'Hello, Holberton',0
+
+section .text
 main:
-	mov edi, format
-	xor eax, eax
-	call printf
-	mov	eax, 0
-	ret
-format: db 'Hello, Holberton\n', 0
+    mov edi, format   ; Load the format string address into edi
+    call printf       ; Call the printf function
+    xor eax, eax      ; Clear eax to prepare for return value
+    ret
+
