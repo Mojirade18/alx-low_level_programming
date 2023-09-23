@@ -8,7 +8,7 @@ list_t *create_node(const char *str);
  * @str: the new node to be added
  * Return: pointer to the head
  */
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *tmp;
 	list_t *new_node;
