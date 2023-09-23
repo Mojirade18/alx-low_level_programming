@@ -63,5 +63,5 @@ int len(const char *str)
 	{
 		i++;
 	}
-	return(i);
+	return (i);
 }
