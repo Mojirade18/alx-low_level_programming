@@ -7,7 +7,8 @@
  * @second_number: second number
  * Return: number of bits to change
  */
-unsigned int flip_bits(unsigned long int first_number, unsigned long int second_number)
+unsigned int flip_bits(unsigned long int first_number,
+		unsigned long int second_number)
 {
 	int i, count = 0;
 	unsigned long int current;
