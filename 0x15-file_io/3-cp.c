@@ -85,8 +85,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	do
-	{
+	do {
 		w = write(to, buffer, r);
 
 		if (w == -1)
@@ -106,8 +105,7 @@ int main(int argc, char *argv[])
 		}
 
 		to = open(argv[2], O_WRONLY | O_APPEND);
-	}
-	while (r > 0);
+	} while (r > 0);
 	free(buffer);
 	close_file(from);
 	close_file(to);
